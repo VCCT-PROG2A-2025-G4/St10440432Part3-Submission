@@ -35,7 +35,12 @@ This is a WPF cybersecurity awareness chatbot that I developed to help the user 
   - Input box and "Send" button at the bottom
 
 ---
-
+ Youtube links:
+ explanation:
+ https://youtu.be/EqozF-dc-yY
+ app showcase:
+ https://youtu.be/sNW1H2i8oZQ
+ 
 ##Example Commands for testing
 
 "I want to take the quiz"
