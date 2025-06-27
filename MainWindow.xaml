@@ -1,0 +1,57 @@
+﻿<!-- Matteo Nusca ST10440432 -->
+<!-- GUI Layout for Cybersecurity Awareness Bot -->
+<!-- Artificial intelligence used for layout guidance and XAML structure -->
+<Window x:Class="St10440432CyberBotGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cybersecurity Awareness Bot"
+        Height="600" Width="800"
+        Background="#FF1E1E2E"
+        FontFamily="Consolas"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="10">
+        <!-- Title Header -->
+        <TextBlock Text="🔐 Cybersecurity Awareness Bot"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="LightCyan"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,0"/>
+
+        <!-- Chat History Display -->
+        <ScrollViewer Name="ChatScrollViewer"
+                      VerticalScrollBarVisibility="Auto"
+                      Margin="10,60,10,110"
+                      Background="Black"
+                      BorderBrush="DarkCyan"
+                      BorderThickness="2">
+            <StackPanel Name="ChatPanel" Margin="10"/>
+        </ScrollViewer>
+
+        <!-- User Input Box -->
+        <TextBox Name="UserInput"
+                 Height="30"
+                 Margin="10,0,120,20"
+                 VerticalAlignment="Bottom"
+                 FontSize="14"
+                 Padding="5"
+                 Background="#FF29293D"
+                 Foreground="White"
+                 BorderBrush="DarkCyan"
+                 BorderThickness="1"/>
+
+        <!-- Send Button -->
+        <Button Name="SendButton"
+                Content="Send"
+                Width="100"
+                Height="30"
+                VerticalAlignment="Bottom"
+                Margin="0,0,10,20"
+                HorizontalAlignment="Right"
+                Background="DarkCyan"
+                Foreground="White"
+                FontWeight="Bold"
+                Click="SendButton_Click"/>
+    </Grid>
+</Window>
