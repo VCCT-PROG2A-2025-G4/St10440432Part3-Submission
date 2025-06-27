@@ -39,7 +39,8 @@ namespace St10440432CyberBotGUI
             string cleanMessage = new string(message.Where(c => c <= 127).ToArray()); // removes emojis
             try
             {
-                speechSynthesizer.SpeakAsync(cleanMessage); // speaks at same time as typing
+                speechSynthesizer.SpeakAsyncCancelAll(); // interrupt current speech
+                speechSynthesizer.SpeakAsync(cleanMessage); // speak new message
             }
             catch (Exception ex)
             {

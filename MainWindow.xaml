@@ -32,14 +32,14 @@
         <!-- User Input Box -->
         <TextBox Name="UserInput"
                  Height="30"
-                 Margin="10,0,120,20"
+                 Margin="10,0,0,20"
                  VerticalAlignment="Bottom"
                  FontSize="14"
                  Padding="5"
                  Background="#FF29293D"
                  Foreground="White"
                  BorderBrush="DarkCyan"
-                 BorderThickness="1"/>
+                 BorderThickness="1" HorizontalAlignment="Left" Width="650"/>
 
         <!-- Send Button -->
         <Button Name="SendButton"

@@ -81,11 +81,12 @@ namespace St10440432CyberBotGUI
 
             var q = _quizQuestions[_currentIndex];
             return $"❓ Q{_currentIndex + 1}: {q.Question}\n" +
-                   $"A) {q.Options[0]}\n" +
-                   $"B) {q.Options[1]}\n" +
-                   $"C) {q.Options[2]}\n" +
-                   (q.Options.Length == 4 ? $"D) {q.Options[3]}\n" : "") +
-                   "✍️ Please answer with A, B, C or D.";
+             $"A) {q.Options[0]}\n" +
+             $"B) {q.Options[1]}\n" +
+             (q.Options.Length > 2 ? $"C) {q.Options[2]}\n" : "") +
+             (q.Options.Length > 3 ? $"D) {q.Options[3]}\n" : "") +
+             "✍️ Please answer with A, B, C or D.";
+
         }
 
         // validates answer
